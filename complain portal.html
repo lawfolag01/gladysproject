@@ -1,0 +1,111 @@
+<html>
+<head>
+<title> Complaint Portal </title>
+</head>
+<style>
+a:link, a:visited {
+  background-color: blue;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: red;
+}
+</style>
+</head>
+<body>
+<body bgcolor="#479e5d">
+<nav class="w3-bar w3-blue">
+ <a href="home.html">Home</li></a>
+ <a href="Login.html">Login</li></a>
+ <a href="register.html">Register</li></a>
+ <a href="Contact.html">Contact</li></a>
+  <a href="about us.html">About Us</li></a> 
+<a href="faq.html">F.A.Q</li></a> 
+    </div>
+<h4>WELCOME to Students Complaints System </h4>
+<p>Please make your complains here...</p>
+
+ 					 <tr>
+                                            <td>Name<span style="color: red">*</span></td>
+                                            <td>:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+					<input type="text" placeholder="Enter Surname first" name="uname" required> 
+                                        </tr>
+<br><br>
+                                        <tr>
+                                            <td> Matric No<span style="color: red">*</span></td>
+                                            <td>:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="grievanceName" id="grievanceNumber" required="" /></td>
+                                        </tr>
+                                        <tr>
+<br><br>
+
+ 					 <tr>
+                                            <td>Faculty<span style="color: red">*</span></td>
+                                            <td>:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="grievanceName" id="grievanceFaculty" required="" /></td>
+                                        </tr>
+<br><br>
+                                     <label>   
+   <td>Department<span style="color: red">*</span></td>:&nbsp;&nbsp;&nbsp;&nbsp;
+    </label>   
+    <select>  
+     <option value="">--Select--</option>
+    <option value="Computer Science">Computer Science</option>  
+    <option value="Accountancy">Accountancy</option>  
+    <option value="Elect/Elect">Elect/Elect</option>  
+    <option value="Computer Engr.">Computer Engr.</option>  
+    <option value="Mass Com.">Mass Com.</option>  
+    <option value="Banking and finance">Banking and Finance</option>  
+    <option value="Banking operation">Banking operation</option>  
+    <option value="Marketing">Marketing</option>    
+    </select>  
+<br><br>
+                                        <tr>
+                                     
+                                            <td>Mobile No <span style="color: red">*</span></td>
+                                            <td>:&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="grievanceContactNo" id="grievanceContactNo" required="" maxlength="10" onkeyup="if (/\D/g.test(this.value))
+                                                        this.value = this.value.replace(/\D/g, '');"/></td>
+                                        </tr>
+<br><br>
+                                        <tr>
+                                            <td>Email Id <span style="color: red">*</span></td>
+                                            <td>:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="email" name="grievanceMailId" id="grievanceMailId" required=""/></td>
+                                        </tr>
+<br><br>
+                                        <td>Complaint To <span style="color: red">*</span></td>
+                                            <td style=" text-align: left">: 
+                                                <select name="unitCategory" id="unitCategory" onchange="display_CUwise()" required="" style="width: 13%">
+                                                    <option value="">--Select--</option>
+
+                                                    <option value="34">Admin Office</option>
+						 <option value="34">Rector</option>
+						 <option value="34">H.O.D</option>
+                                                </select>
+                                            </td>  
+ <br><br>  
+                                            <td>Subject  <span style="color: red">*</span></td>
+                                            <td>: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="subject" id="subject" required=""/></td>
+                                        </tr>
+<br><br> 
+ <label class="d-block mb-4">
+          <span class="d-block mb-2">Nature ?</span>
+<br>
+          <textarea
+            name="message"
+            class="form-control"
+            rows="3"
+            placeholder="Please describe your problem"
+          ></textarea>
+        </label>
+
+        <div class="mb-3">
+          <button type="submit" class="btn btn-primary px-3">Submit</button>
+        </div>
+          </div>
+        </div>
+      </form>
+</body>
+</html>

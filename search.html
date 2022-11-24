@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 900px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 900px) {
+  .column, input[type=submit] {
+    width: 200%;
+    margin-top: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>Responsive Contact Section</h2>
+<p>Resize the browser window to see the effect.</p>
+
+<div class="container">
+  <div style="text-align:center">
+    <h2>Contact Us</h2>
+    <p>Swing by for a cup of coffee, or leave us a message:</p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <div class="pull-right">
+								<i class="icon-calendar icon-large"></i>
+								<?php
+								$Today = date('y:m:d');
+								$new = date('l, F d, Y', strtotime($Today));
+								echo $new;
+								?>
+			</div>
+			</div>
+	<div class="content-left">
+		<font style=" color:darkblue; font:bold 24px 'cambria';">
+<i class="icon icon-exclamation"></i> Frequently Asked Questions</font><hr style="margin:8px; border-bottom:1px solid #ccc;">
+						
+<div class="serts">
+							
+<div class="panel-group" id="accordion">
+				
+				
+<div class="panel panel-default">
+                                                    <h4 class="panel-title">
+ <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseAOne">I had a missing script</a>
+                            </h4>
+                        </div>
+                        <div id="collapseAOne" class="panel-collapse collapse">
+                            <div class="panel-body">
+							<ul>
+							  <p>Visit exams and records.</p>
+						      
+							</ul>
+								</div>
+                        </div>
+                    </div>
+                    <!-- /.panel -->
+					
+					
+		
+ <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">How can I complete fees registration?</a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse">
+                            <div class="panel-body">
+							<ul>
+                                <p>Visit the school portal</p>
+							</ul>
+								</div>
+                        </div>
+                    </div>
+                    <!-- /.panel -->
+					
+					
+					
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+ <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">My post utme score was not recorded</a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse">
+                            <div class="panel-body">
+							Check the Post Utme section of the school's website
+                              </div>
+                        </div>
+                    </div>
+                    <!-- /.panel -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" 
+                        <div id="collapseThree" class="panel-collapse collapse">
+                            <div class="panel-body">
+                             It is not difficult to switch departments as long as students<br> meet the academic requirements for that program. <br>For some programs students must fill out a short application before<br> receiving approval, but for most programs students simply <br>need the approval of their faculty advisor and the dean from the faculty they want switch to.  </div>
+                        </div>
+                    </div>
+                    <!-- /.panel -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">How do I secure a hostel accomodation</a>
+                            </h4>
+                        </div>
+                        <div id="collapseFour" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                Visit the hostel portal</p>
+
+							</div>
+                        </div>
+                  
+                    <!-- /.panel -->
+					
+					
+					
+					 <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseASix">Is there a lot to do in the surrounding area? </a>
+                            </h4>
+                        </div>
+                    <!-- /.panel -->
+						
+					
+					
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseSix">How available are the professors to the students?</a>
+                            </h4>
+                        </div>
+                        <div id="collapseSix" class="panel-collapse collapse">
+                            <div class="panel-body">
+                               Professors make themselves very available <br>to students, giving out their office hours, email addresses,<br> phone numbers, and sometimes even home or cell phone numbers on the first day of class. <br>They encourage students to drop in during their 2 hours a week of office hours,<br> even just to chat. If you can’t make it during their office hours,<br> they’ll meet with you by appointment. </div>
+                        </div>
+
+                    </div>
+                    <!-- /.panel -->
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">How’s safety on campus?</a>
+                            </h4>
+                        </div>
+                        <div id="collapseSeven" class="panel-collapse collapse">
+                            <div class="panel-body">
+                          afety is very tight on campus, with two full size police forces (benin police).<br> Our residence halls are locked 24 hours a day with access by student ID card. After 10p.m. students can only get into their own residence hall.<br> We also have student security officers patrolling on evenings. <br>Our emergency call boxes, strategically scattered throughout the campus,<br> have a two minute response time.    </div>
+                        </div>
+                    </div>
+					
+					
+                    <!-- /.panel -->
+					
+					
+					
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseEight">What sort of academic support is available to students? </a>
+                            </h4>
+                        </div>
+                        <div id="collapseEight" class="panel-collapse collapse">
+                            <div class="panel-body">
+                            If a student is not satisfied with the support they can get from their<br> professors, there are many other options to pursue. The Center for Academic Resources (CFAR) is <br>a great resource for scholastic support. They offer study groups, note taking tips, tutoring services.
+							  </div>
+                        </div>
+                    </div>
+					
+					
+                    <!-- /.panel -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseNine">What are weekends like on campus? </a>
+                            </h4>
+                        </div>
+                        <div id="collapseNine" class="panel-collapse collapse">
+                            <div class="panel-body">
+                             This question is best answered with a personal touch.<br> It is important to ensure parents and students that although there is<br> a party presence on any campus, there are also numerous alternatives. 
+							  </div>
+                        </div>
+                    </div>
+				
+					
+                    <!-- /.panel -->
+					<div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTen">What is the retention rate for first year students?</a>
+                            </h4>
+                        </div>
+                        <div id="collapseTen" class="panel-collapse collapse">
+                            <div class="panel-body">
+                               About 90% of first year students return for the second year.  
+							   </div>
+                        </div>
+                       </div>
+					
+                    <!-- /.panel -->
+					<div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseEleven">Are there more in-state students than out of state students?</a>
+                            </h4>
+                        </div>
+                        <div id="collapseEleven" class="panel-collapse collapse">
+                            <div class="panel-body">
+                             In our undergraduate population,<br> 57% of our students are in state, while 43% are out of state.<br> Our first year class is typically comprised of 53% New residents and 47% non-residents. </div>
+                        </div>
+                    </div>
+					
+                    <!-- /.panel -->
+					<div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwelve">What is the student to faculty ratio on campus?</a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwelve" class="panel-collapse collapse">
+                            <div class="panel-body">
+                             19:1</div>
+                        </div>
+                   
+                    <!-- /.panel -->
+					<div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFourteen">What is the acceptance rate for applicants?</a>
+                            </h4>
+                        </div>
+                        <div id="collapseFourteen" class="panel-collapse collapse">
+                            <div class="panel-body">
+                            This year’s acceptance rate was 74%.</p>										
+															 </div>
+															 
+                        </div>
+                    </div>
+                    <!-- /.panel -->
+					<div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFifteen">What is the duration of a semester</a>
+                            </h4>
+                        </div>
+                        <div id="collapseFifteen" class="panel-collapse collapse">
+                            <div class="panel-body">
+                           Three to four months</p>										
+															 </div>
+															 
+                   				 
+                 
+					  <!-- /.panel -->
+					<div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseSeventeen">Is the school fees cost?</a>
+                            </h4>
+                        </div>
+                        <div id="collapseSeventeen" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                     Its is very affordable										
+															 </div>
+															 
+                        </div>
+                    </div>
+					  <!-- /.panel -->
+					<div class="panel panel-default">
+               
+
+<footer>
+<center></center>
+</footer>		
+	</div><!-- end container --->
+
+</body>
+
+<?php include('scripts.php'); ?>
+</html>%">
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+       <strong>WELCOME</strong> to Students complaints management system
+<br><br><br>
+<tr>
+                                            <td> Matric No<span style="color: red">*</span></td>
+                                            <td>:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="grievanceName" id="grievanceNumber" required="" /></td>
+                                        </tr>
+                                        <tr>
+<br><br>
+
+                                        <tr>
+                                            <td>Department<span style="color: red">*</span></td>
+                                            <td>: &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="grievanceName" id="grievanceDepartment" required="" /></td>
+                                        </tr>
+<br><br>
+ 					 <tr>
+                                            <td>Faculty<span style="color: red">*</span></td>
+                                            <td>:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="grievanceName" id="grievanceFaculty" required="" /></td>
+                                        </tr>
+<br><br>
+                                        <tr>
+                                     
+                                            <td>Mobile No <span style="color: red">*</span></td>
+                                            <td>:&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="grievanceContactNo" id="grievanceContactNo" required="" maxlength="10" onkeyup="if (/\D/g.test(this.value))
+                                                        this.value = this.value.replace(/\D/g, '');"/></td>
+                                        </tr>
+<br><br>
+                                        <tr>
+                                            <td>Email Id <span style="color: red">*</span></td>
+                                            <td>:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="email" name="grievanceMailId" id="grievanceMailId" required=""/></td>
+                                        </tr>
+<br><br>
+                                        <td>Complaint To <span style="color: red">*</span></td>
+                                            <td style=" text-align: left">: 
+                                                <select name="unitCategory" id="unitCategory" onchange="display_CUwise()" required="" style="width: 13%">
+                                                    <option value="">--Select--</option>
+
+                                                    <option value="34">Admin Office</option>
+						 <option value="34">Rector</option>
+						 <option value="34">H.O.D</option>
+                                                </select>
+                                            </td>  
+ <br><br>  
+                                            <td>Subject  <span style="color: red">*</span></td>
+                                            <td>: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="subject" id="subject" required=""/></td>
+                                        </tr>
+<br><br> 
+ <label class="d-block mb-4">
+          <span class="d-block mb-2">Nature ?</span>
+<br>
+          <textarea
+            name="message"
+            class="form-control"
+            rows="3"
+            placeholder="Please describe your problem"
+          ></textarea>
+        </label>
+
+        <div class="mb-3">
+          <button type="submit" class="btn btn-primary px-3">Submit</button>
+        </div>
+          </div>
+        </div>
+      </form>
+</body>
+</html>
